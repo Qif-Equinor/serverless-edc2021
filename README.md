@@ -11,7 +11,7 @@ Two demo projects are made in this repos to show the usage of serverless framewo
 ## Prerequisites
 1. Azure subscription
 2. AWS account credentials.
-3. Node.
+3. Node.js 8.x or above
 4. Requires the use of [direnv](https://direnv.net).
 
 ## Quick start
@@ -22,6 +22,13 @@ This section applies for both examples on Azure and AWS.
 
 ```
 npm install -g serverless
+```
+
+### Available templates
+
+```shell
+serverless create --help
+
 ```
 
 ### Deploy service

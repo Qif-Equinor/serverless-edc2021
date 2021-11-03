@@ -1,24 +1,21 @@
 import logging
+import os
+import json
 
 import azure.functions as func
 
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
-    logging.info('Python HTTP trigger function processed a request.')
+    """
+    Monitor Github push
+    :param req: HttpRequest
+    :return:  HttpResponse
+    """
+    logging.info('GitHub Monitor processed a request.')
+    var = os.environ.get("VARIABLE_FOO")
+    logging.info(var)
+    req_body = req.get_body()
 
-    name = req.params.get('name')
-    if not name:
-        try:
-            req_body = req.get_json()
-        except ValueError:
-            pass
-        else:
-            name = req_body.get('name')
-
-    if name:
-        return func.HttpResponse(f"Hello {name}!")
-    else:
-        return func.HttpResponse(
-             "Please pass a name on the query string or in the request body",
-             status_code=400
-        )
+    json_body = json.loads(req_body.decode())
+    logging.info(json_body)
+    return func.HttpResponse(f"Hello {json_body}!")

@@ -13,6 +13,7 @@ Two demo projects are made in this repos to show the usage of serverless framewo
 2. AWS account credentials.
 3. Node.js 8.x or above
 4. Requires the use of [direnv](https://direnv.net).
+5. VSCODE or PyCharm.
 
 ## Quick start
 
@@ -45,3 +46,7 @@ serverless invoke local -f <function-name> -l
 ```shell
 serverless remove
 ```
+
+## Acknowledgement
+
+Thanks for all the participants. Just drop mail to qif@equinor.com if you have any questions.

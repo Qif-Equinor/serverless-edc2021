@@ -1,7 +1,11 @@
 import json
+import logging
 
 
 def hello(event, context):
+
+    logging.info("AWS Lambda processing message from GitHub.")
+
     body = {
         "message": "Go Serverless v1.0! Your function executed successfully!",
         "input": event

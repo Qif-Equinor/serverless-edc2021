@@ -10,7 +10,7 @@ def hello(event, context):
     logger.info(f"AWS Lambda processing message from GitHub: {event}.")
 
     body = {
-        "message": "Go Serverless v1.0! Your function executed successfully!",
+        "message": "Your function executed successfully!",
         "input": event
     }
 

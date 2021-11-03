@@ -46,3 +46,7 @@ serverless invoke local -f <function-name> -l
 ```shell
 serverless remove
 ```
+
+## Acknowledgement
+
+Thanks for all the participants.

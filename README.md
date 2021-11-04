@@ -50,5 +50,3 @@ serverless remove
 ## Acknowledgement
 
 Thanks for all the participants. Just drop mail to qif@equinor.com if you have any questions.
-
-xxxx
